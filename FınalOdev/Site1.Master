@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FınalOdev.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <link href="StyleSheet1.css" rel="stylesheet"/>
+    <script src="JavaScript.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="slider">
+    <div class="slides">
+        <div class="slide"><img src= "Foto/mafia.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src= "Foto/slide5.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src= "Foto/ghost.jpg" alt="Slide 3"></div>
+        <div class="slide"><img src= "Foto/slide1.jpg" alt="Slide 4"></div>
+        <div class="slide"><img src= "Foto/slide2.jpg" alt="Slide 5"></div>
+
+            </div>
+</div>
+
+
+            <div class="menu">
+                <h1>
+                     OyunHaber
+                </h1>
+                <ul>
+                    <li><a href="index.aspx">Anasayfa</a></li>
+                    <li><a href="WebForm2.aspx">İletişim</a></li>
+                    <li><a href="WebForm3.aspx">Hakkımızda</a></li>
+                    <li><a href="WebForm4.aspx">Form</a></li>
+
+                </ul>
+            </div>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    
+
+            <div class="footer ">
+             <p>&copy; 2024 Tüm Hakları Saklıdır | Final Projesi</p>
+             <p><a href="https://github.com">GitHub</a> | <a href="https://linkedin.com">LinkedIn</a> | <a href="mailto:info@site.com">İletişim</a></p>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>

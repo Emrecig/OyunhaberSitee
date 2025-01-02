@@ -1,0 +1,307 @@
+﻿body {
+    background-color: #000; 
+    color: #fff; 
+    font-family: Arial, sans-serif; 
+    background: url('Foto/arkaplan.jpg');
+}
+    body h1 {
+        color: white;
+        margin-left: 20px;
+    }
+
+.slider {
+    position: relative;
+    max-width: 1150px; 
+    margin: 5px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 550px; 
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 500%; 
+    height: 100%; 
+}
+
+.slide {
+    flex: 1 0 100%;
+    height: 100%; 
+    width: 1150px; 
+}
+
+    .slide img {
+        width: 1150px; 
+        height: 100%; 
+        object-fit: contain; 
+        display: block;
+        border-radius: 10px;
+    }
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.menu {
+    min-height: 10vh;
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+    background-color: blueviolet;
+}
+    .menu h1 {
+        margin: 0; 
+        color: white;
+        margin-left: 0px;
+    }
+.menu ul
+{
+    margin-left: 50px;
+    margin: 0;
+    padding: 0;
+    width:400px;
+    display:flex;
+    justify-content:space-between;
+}
+.menu ul li
+{
+
+    list-style:none;
+    font-size:1.2rem;
+}
+    .menu ul a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s ease;
+    }
+
+        .menu ul a:hover {
+            color: #ff9800; 
+        }
+
+
+.foto-oyun {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 20px auto;
+    max-width: 1400px;
+}
+
+.oyun-item {
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+    .oyun-item img {
+        width: 100%;
+        max-width: 900px;
+        height: 250px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .oyun-item p {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .oyun-item:hover img {
+        transform: scale(1.1);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .oyun-item:hover p {
+        color: #ff9800;
+        font-weight: bold;
+    }
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+    .animate-on-scroll.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+
+.tanıtım-kutu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #222; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.tanıtım-foto {
+    flex: 1;
+    max-width: 40%; 
+    margin-right: 20px;
+}
+
+    .tanıtım-foto img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+.tanıtım-yazi {
+    flex: 2; 
+    color: #fff;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+    .tanıtım-yazi h2 {
+        margin-bottom: 15px;
+        font-size: 28px;
+        color: #ff9800; 
+    }
+
+
+
+
+.iletisim-bilgi {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #222; 
+    color: #fff; 
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+
+.iletisim-bilgi {
+    flex: 1;
+    padding: 20px;
+}
+
+    .iletisim-bilgi h2 {
+        margin-bottom: 20px;
+        color: #ff9800; 
+    }
+
+    .iletisim-bilgi p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .iletisim-bilgi a {
+        color: #ff9800; 
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .iletisim-bilgi a:hover {
+            color: #fff;
+        }
+
+.map {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .map iframe {
+        width: 100%;
+        height: 350px;
+        border: none;
+    }
+
+
+
+
+
+
+.yorum-kutu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto; 
+}
+
+.yorum-kart {
+    display: flex;
+    background-color: #1e1e2f;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    color: white;
+}
+
+    .yorum-kart img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; 
+        object-fit: cover;
+        margin-right: 20px;
+    }
+
+.yorumlar h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #ff9800; 
+}
+
+.yorumlar p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: #fff; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: transparent; 
+    color: #fff; 
+    text-align: center;
+    padding: 10px 0;
+    position: unset; 
+    bottom: 0;
+    width: 100%; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); 
+    font-size: 14px;
+}
+
+    .footer a {
+        color: #ff9800;
+        text-decoration: none;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+        .footer a:hover {
+            color: #fff; 
+        }
