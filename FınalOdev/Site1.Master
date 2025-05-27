@@ -14,18 +14,20 @@
 
 </head>
 <body>
+
     <form id="form1" runat="server">
         <div>
-            <div class="slider">
-    <div class="slides">
-        <div class="slide"><img src= "Foto/mafia.jpg" alt="Slide 1"></div>
-        <div class="slide"><img src= "Foto/slide5.jpg" alt="Slide 2"></div>
-        <div class="slide"><img src= "Foto/ghost.jpg" alt="Slide 3"></div>
-        <div class="slide"><img src= "Foto/slide1.jpg" alt="Slide 4"></div>
-        <div class="slide"><img src= "Foto/slide2.jpg" alt="Slide 5"></div>
-
+        <div class="slider">
+            <div class="slides">
+                <asp:Repeater ID="rptSlider" runat="server">
+                    <ItemTemplate>
+                        <div class="slide">
+                            <img src='<%# Eval("ImageUrl") %>' alt="Slider Image" />
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
             </div>
-</div>
+        </div>
 
 
             <div class="menu">
@@ -37,6 +39,7 @@
                     <li><a href="WebForm2.aspx">İletişim</a></li>
                     <li><a href="WebForm3.aspx">Hakkımızda</a></li>
                     <li><a href="WebForm4.aspx">Form</a></li>
+                    <li><a href="WebForm5.aspx">Kullanıcı</a></li>
 
                 </ul>
             </div>

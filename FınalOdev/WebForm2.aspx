@@ -6,6 +6,7 @@
 
     <div class="tanıtım-kutu">
           
+         
         <div class="iletisim-bilgi">
             <h2>İletişim Bilgilerimiz</h2>
             <p><strong>Adres:</strong> OyunHaber Merkezi, Seyran, Ermenek, Türkiye</p>
@@ -13,6 +14,7 @@
             <p><strong>E-posta:</strong> <a href="mailto:info@oyunhaber.com">info@oyunhaber.com</a></p>
             <p><strong>Çalışma Saatleri:</strong> Hafta içi 09:00 - 18:00</p>
         </div>
+
 
   
         <div class="map">
@@ -23,7 +25,21 @@
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
-    </div>
+       </div>
+
+            <div class="form-container">
+    <h2>İletişim Formu</h2>
+    <asp:TextBox ID="txtAd" runat="server" CssClass="form-control" required="true" placeholder="Adınız" OnTextChanged="txtAd_TextChanged"></asp:TextBox>
+    <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" TextMode="Email" required="true" placeholder="E-Posta"></asp:TextBox>
+    <asp:TextBox ID="txtMesaj" runat="server" CssClass="form-control" TextMode="MultiLine" required="true" placeholder="Mesajınız"></asp:TextBox>
+
+    <asp:FileUpload ID="fuDosya" runat="server" CssClass="form-control" />
+
+    <asp:Button ID="btnGonder" runat="server" CssClass="btn btn-primary" Text="Gönder" OnClick="btnGonder_Click" />
+    <asp:Label ID="lblSonuc" runat="server" CssClass="text-success"></asp:Label>
+
+                     <asp:Label ID="lblResult" runat="server" ForeColor="Red"></asp:Label>
+</div>
 
 
 
